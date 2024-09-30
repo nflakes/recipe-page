@@ -1,0 +1,196 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit';
+    font-size: 16px;
+    background-color: hsl(30, 54%, 90%);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 12px;
+    width: 768px;
+    margin: 120px 200px;
+    padding: 40px;
+    color: hsl(30, 10%, 34%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+img {
+    border-radius: 12px;
+}
+
+h1 {
+    font-family: 'Young Serif';
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-top: 24px;
+    color: hsl(0, 0%, 0%);
+}
+
+hr {
+    margin: 20px 0;
+    background-color: hsl(0, 0%, 88%);
+}
+
+.text-info {
+    padding: 20px 0;
+}
+
+.preparation-section {
+    margin: 12px 0;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: hsl(330, 100%, 98%);
+}
+
+.preparation-section p {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: hsl(332, 51%, 32%);
+}
+
+.preparation-section ul {
+    line-height: 2;
+}
+
+.ingredients-section,
+.instructions-section {
+    line-height: 1.8;
+    padding-bottom: 20px;
+}
+
+.ingredients-title,
+.instructions-title,
+.nutrition-title {
+    margin: 12px 0;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Young Serif';
+    color: hsl(14, 45%, 36%);
+}
+
+
+.instructions-section li::marker,
+.nutrition-section td:last-child {
+    font-weight: 800;
+    color: hsl(14, 45%, 36%);
+}
+
+.nutrition-section table {
+    width: 100%;
+    line-height: 2.5;
+    border-collapse: collapse;
+}
+
+.nutrition-section tr {
+    border-bottom: 1px solid hsl(0, 0%, 88%);
+}
+
+.nutrition-section tr:last-child {
+    border-bottom: none;
+}
+
+.nutrition-section p {
+    margin: 20px 0;
+}
+
+.nutrition-section td {
+    padding-left: 24px;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        border-radius: 0;
+    }
+
+    h1 {
+        margin: 30px 30px;
+    }
+
+    hr {
+        margin: 0 30px;
+    }
+
+    .text-info {
+        margin: 0 30px;
+        padding: 0;
+    }
+
+    .preparation-section {
+        margin: 30px 20px 0 20px;
+    }
+
+    .preparation-section ul {
+        line-height: 2.3;
+    }
+
+    .ingredients-section, .instructions-section, .nutrition-section {
+        margin: 20px 30px;
+        line-height: 1.8;
+      
+    }  
+    
+} 
