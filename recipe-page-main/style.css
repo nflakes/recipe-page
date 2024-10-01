@@ -126,7 +126,6 @@ hr {
     color: hsl(14, 45%, 36%);
 }
 
-
 .instructions-section li::marker,
 .nutrition-section td:last-child {
     font-weight: 800;
@@ -154,6 +153,7 @@ hr {
 .nutrition-section td {
     padding-left: 24px;
 }
+
 
 @media (max-width: 768px) {
     .main-container {
@@ -187,10 +187,10 @@ hr {
         line-height: 2.3;
     }
 
-    .ingredients-section, .instructions-section, .nutrition-section {
+    .ingredients-section,
+    .instructions-section,
+    .nutrition-section {
         margin: 20px 30px;
         line-height: 1.8;
-      
-    }  
-    
-} 
+    }
+}
