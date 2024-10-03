@@ -55,7 +55,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Outfit';
-    font-size: 16px;
+    font-size: 1rem;
     background-color: hsl(30, 54%, 90%);
 }
 
@@ -63,7 +63,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border-radius: 12px;
+    border-radius: 20px;
     width: 768px;
     margin: 120px 200px;
     padding: 40px;
@@ -110,6 +110,12 @@ hr {
     line-height: 2;
 }
 
+.preparation-section li,
+.ingredients-section li,
+.instructions-section li{
+    padding-left: 8px;
+}
+
 .ingredients-section,
 .instructions-section {
     line-height: 1.8;
@@ -120,7 +126,7 @@ hr {
 .instructions-title,
 .nutrition-title {
     margin: 12px 0;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     font-family: 'Young Serif';
     color: hsl(14, 45%, 36%);
